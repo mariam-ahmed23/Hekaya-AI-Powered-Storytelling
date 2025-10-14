@@ -10,20 +10,14 @@ from langchain_core.messages import HumanMessage
 import soundfile as sf
 import numpy as np
 
-# ======================================
-# 🌟 PAGE CONFIG
-# ======================================
+
 st.set_page_config(page_title="Story Generator (LLM + TTS + Video)", page_icon="🎧", layout="centered")
 
-# ======================================
-# 🔑 API KEYS
-# ======================================
-LLM_API_KEY = "AIzaSyBhVgp2lyBFyPdEo3LY3huVIbaVbBUZO3U"
-TTS_API_KEY = "AIzaSyAyW2mpeilNHhHxKQ22uoq4GAd3RWiYXcw"
 
-# ======================================
-# ⚙️ Ensure ffmpeg Installed
-# ======================================
+LLM_API_KEY = 
+TTS_API_KEY = 
+
+
 def ensure_ffmpeg_installed():
     try:
         subprocess.run(["ffmpeg", "-version"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
